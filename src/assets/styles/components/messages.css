@@ -1,0 +1,19 @@
+.alert {
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #d4c600;
+}
+.text-message {
+  padding: 0 15px 15px 15px;
+  margin: 0;
+}
+.alert-success {
+  background: #fffcd4;
+}
+.alert-danger {
+  background: #df7c72;
+}
+.close-mes {
+  padding-top: 5px;
+  margin: 0 10px 0 auto;
+}

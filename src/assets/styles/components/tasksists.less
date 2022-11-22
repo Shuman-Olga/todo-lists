@@ -1,0 +1,124 @@
+@gw-blue: rgb(52, 152, 219);
+@gw-purple: rgb(142, 68, 173);
+@gw-green: rgb(46, 204, 113);
+@gw-gray-5: rgb(85, 85, 85);
+@gw-red: rgb(192, 57, 43);
+@gw-orange: rgb(253, 194, 0);
+
+.tasklist-wrap {
+  width: 80vmax;
+  text-align: center;
+  margin: 25px auto;
+}
+.task-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  margin-top: 5px;
+  padding: 0 15px;
+  .block-desc {
+    margin: 25px;
+  }
+}
+.btn-add-message {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 2vw;
+}
+.button {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  color: #fff;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.primary {
+  line-height: 40px;
+  transition: ease-in-out 0.2s;
+  padding: 0 16px;
+}
+
+.primary:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 99999px rgba(0, 0, 0, 0.2);
+}
+.edit:hover {
+  background: darken(@gw-blue, 10%);
+}
+.delete:hover {
+  background: darken(@gw-red, 10%);
+}
+.edit:before,
+.new:before,
+.delete:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1rem;
+
+  background: none;
+  color: #fff;
+}
+.new:before {
+  padding-right: 10px;
+}
+.edit:before,
+.delete:before {
+  padding-left: 20px;
+}
+
+.inlineIcon.edit,
+.inlineIcon.delete {
+  background: transparent;
+}
+.inlineIcon.edit:before,
+.inlineIcon.new:before,
+.inlineIcon.delete:before {
+  font-size: 25px;
+}
+.edit {
+  background: @gw-blue;
+
+  &:before {
+    content: '\f040';
+  }
+}
+.inlineIcon.edit:before {
+  color: @gw-blue;
+}
+.new {
+  background: @gw-green;
+
+  &:before {
+    content: '\f067';
+  }
+}
+
+.inlineIcon.new:before {
+  color: @gw-green;
+}
+.delete {
+  background: @gw-red;
+
+  &:before {
+    content: '\f1f8';
+  }
+}
+
+.inlineIcon.delete:before {
+  color: @gw-red;
+}
+.activeclass-status-completed {
+  background-color: lighten(@gw-green, 40%);
+}
+.activeclass-status-in-work {
+  background-color: lighten(@gw-orange, 40%);
+}
+.activeclass-status-not-completed {
+  background-color: lighten(@gw-red, 40%);
+}

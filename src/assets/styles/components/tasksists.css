@@ -1,0 +1,109 @@
+.tasklist-wrap {
+  width: 80vmax;
+  text-align: center;
+  margin: 25px auto;
+}
+.task-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  margin-top: 5px;
+  padding: 0 15px;
+}
+.task-block .block-desc {
+  margin: 25px;
+}
+.btn-add-message {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 2vw;
+}
+.button {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  color: #fff;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.primary {
+  line-height: 40px;
+  transition: ease-in-out 0.2s;
+  padding: 0 16px;
+}
+.primary:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 99999px rgba(0, 0, 0, 0.2);
+}
+.edit:hover {
+  background: #217dbb;
+}
+.delete:hover {
+  background: #962d22;
+}
+.edit:before,
+.new:before,
+.delete:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1rem;
+  background: none;
+  color: #fff;
+}
+.new:before {
+  padding-right: 10px;
+}
+.edit:before,
+.delete:before {
+  padding-left: 20px;
+}
+.inlineIcon.edit,
+.inlineIcon.delete {
+  background: transparent;
+}
+.inlineIcon.edit:before,
+.inlineIcon.new:before,
+.inlineIcon.delete:before {
+  font-size: 25px;
+}
+.edit {
+  background: #3498db;
+}
+.edit:before {
+  content: '\f040';
+}
+.inlineIcon.edit:before {
+  color: #3498db;
+}
+.new {
+  background: #2ecc71;
+}
+.new:before {
+  content: '\f067';
+}
+.inlineIcon.new:before {
+  color: #2ecc71;
+}
+.delete {
+  background: #c0392b;
+}
+.delete:before {
+  content: '\f1f8';
+}
+.inlineIcon.delete:before {
+  color: #c0392b;
+}
+.activeclass-status-completed {
+  background-color: #d1f5e0;
+}
+.activeclass-status-in-work {
+  background-color: #fff3ca;
+}
+.activeclass-status-not-completed {
+  background-color: #f2c9c5;
+}
