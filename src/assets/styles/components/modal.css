@@ -64,6 +64,11 @@
   left: 0.1em;
   box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset;
 }
+@media (max-width: 680px) {
+  .modal .modal-content {
+    width: 90vw;
+  }
+}
 .block-status {
   display: flex;
   width: 100%;

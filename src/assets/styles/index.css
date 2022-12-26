@@ -23,9 +23,15 @@ body {
   height: 100px;
 }
 .tasklist-wrap {
-  width: 80vmax;
+  width: 80vw;
   text-align: center;
   margin: 25px auto;
+}
+@media (max-width: 680px) {
+  .tasklist-wrap {
+    width: 95vw;
+    margin: 5px auto;
+  }
 }
 .task-block {
   display: flex;
@@ -196,6 +202,11 @@ body {
   top: 0.1em;
   left: 0.1em;
   box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset;
+}
+@media (max-width: 680px) {
+  .modal .modal-content {
+    width: 90vw;
+  }
 }
 .block-status {
   display: flex;
